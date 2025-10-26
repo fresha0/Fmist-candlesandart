@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="4-Day Online Candle Making Course with Full Kit Delivered. Learn from Basic to Pro. ₹4,500 All-Inclusive.">
+    <meta name="keywords" content="candle making course, online classes, learn candle making, soy candles, scented candles, India">
+    <title>Mystical Candle Making - 4-Day Online Course</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #ff6b35;
+            --secondary: #ff9a56;
+            --dark: #8B4513;
+            --light: #fff8f0;
+        }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #fff8f0, #ffe4d6);
+            color: #333;
+            line-height: 1.7;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.3rem;
+            opacity: 0.95;
+        }
+        nav {
+            background: var(--dark);
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: 0.3s;
+        }
+        nav a:hover { text-decoration: underline; }
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        section { margin-bottom: 50px; }
+        h2 {
+            color: var(--dark);
+            font-size: 2rem;
+            border-bottom: 4px solid #ffcc99;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        h3 { color: var(--primary); margin-top: 20px; }
+        .highlight-box {
+            background: #fff5e6;
+            border-left: 6px solid var(--primary);
+            padding: 20px;
+            border-radius: 0 10px 10px 0;
+            margin: 25px 0;
+            font-weight: 600;
+        }
+        ul { padding-left: 0; }
+        ul li {
+            background: #f9f9f9;
+            margin: 12px 0;
+            padding: 14px;
+            border-radius: 8px;
+            border: 1px solid #eee;
+            position: relative;
+            padding-left: 40px;
+        }
+        ul li::before {
+            content: "Checkmark";
+            position: absolute;
+            left: 15px;
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .schedule-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            margin-top: 20px;
+        }
+        .day-card {
+            background: #fff3e6;
+            padding: 18px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #ffcc99;
+            transition: transform 0.3s;
+        }
+        .day-card:hover { transform: translateY(-5px); }
+        .day-card h4 {
+            color: var(--dark);
+            margin-bottom: 8px;
+            font-size: 1.3rem;
+        }
+        .price {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-align: center;
+            margin: 25px 0;
+        }
+        .payment-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .payment-option {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            text-align: center;
+            flex: 1;
+            min-width: 200px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .payment-option:hover, .payment-option.selected {
+            border-color: var(--primary);
+            background: #fff5e6;
+        }
+        .payment-option input[type="radio"] {
+            margin-right: 10px;
+        }
+        form {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #ddd;
+        }
+        label {
+            display: block;
+            margin: 15px 0 8px;
+            font-weight: 600;
+            color: #444;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+        input:focus, select:focus, textarea:focus {
+            border-color: var(--primary);
+            outline: none;
+        }
+        button {
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            color: white;
+            padding: 16px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            width: 100%;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255,107,53,0.4);
+        }
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #paymentSection {
+            margin-top: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            display: none;
+        }
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: var(--dark);
+            color: white;
+            margin-top: 60px;
+            font-size: 0.9rem;
+        }
+        footer a { color: #ffcc99; text-decoration: none; }
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+        .whatsapp-btn:hover { transform: scale(1.1); }
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.2rem; }
+            main { margin: 15px; padding: 20px; }
+            .schedule-grid { grid-template-columns: 1fr; }
+            .payment-options { flex-direction: column; }
+        }
+    </style>
+    <!-- Razorpay JS SDK -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Mystical Candle Making</h1>
+        <p>4-Day LIVE Online Course • Full Kit Delivered • ₹4,500 All-Inclusive</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#curriculum">Curriculum</a>
+        <a href="#enroll">Enroll</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Learn Candle Making from Home</h2>
+            <p>Join our <strong>4-day live Zoom course</strong> and master candle making from scratch. Perfect for beginners & hobbyists!</p>
+            <div class="highlight-box">
+                <p>Live Classes • Full Material Kit Shipped • 30-Day Recordings • Certificate</p>
+            </div>
+        </section>
+
+        <section id="curriculum">
+            <h2>4-Day Curriculum – What You'll Learn</h2>
+
+            <div class="schedule-grid">
+                <div class="day-card">
+                    <h4>Day 1: Foundation</h4>
+                    <p>Types of wax (Soy, Paraffin, Beeswax, Gel)<br>Safety & workspace setup<br>Melting techniques<br><strong>Make:</strong> First Container Candle</p>
+                </div>
+                <div class="day-card">
+                    <h4>Day 2: Core Skills</h4>
+                    <p>Wick selection & centering<br>Fragrance blending basics<br>Color layering & smooth tops<br><strong>Make:</strong> Scented Soy Jar Candle</p>
+                </div>
+                <div class="day-card">
+                    <h4>Day 3: Advanced Molding</h4>
+                    <p>Pillar, votive & shaped molds<br>Gel & beeswax secrets<br>Embedding flowers, textures<br><strong>Make:</strong> 3D Pillar + Gel Candle</p>
+                </div>
+                <div class="day-card">
+                    <h4>Day 4: Pro Mastery</h4>
+                    <p>Perfume-grade scent blending<br>Marbling, swirling, embeds<br>Packaging & branding tips<br><strong>Make:</strong> Signature Art Candle</p>
+                </div>
+            </div>
+
+            <div class="price">₹4,500</div>
+            <p style="text-align:center;"><strong>All-Inclusive:</strong> Kit + Shipping + Classes + Recordings + Certificate</p>
+        </section>
+
+        <section id="enroll">
+            <h2>Enroll Now – Next Batch Starts Soon!</h2>
+            <p>Kit delivered in 5–7 days. Limited seats per batch.</p>
+
+            <form id="enrollForm">
+                <label>Full Name *</label>
+                <input type="text" id="name" required placeholder="Your Name">
+
+                <label>Email *</label>
+                <input type="email" id="email" required placeholder="you@email.com">
+
+                <label>Phone (WhatsApp) *</label>
+                <input type="tel" id="phone" required placeholder="e.g., 8200103592">
+
+                <label>Shipping Address *</label>
+                <textarea id="address" rows="3" required placeholder="Full address with PIN code"></textarea>
+
+                <label>Batch Start Date *</label>
+                <select id="batch" required>
+                    <option value="">Select Batch</option>
+                    <option>Nov 1, 2025 (Sat–Tue)</option>
+                    <option>Nov 8, 2025 (Sat–Tue)</option>
+                    <option>Nov 15, 2025 (Sat–Tue)</option>
+                </select>
+
+                <label>Time Slot *</label>
+                <select id="time" required>
+                    <option value="">Select Time</option>
+                    <option>10:00 AM – 12:00 PM IST</option>
+                    <option>7:00 PM – 9:00 PM IST</option>
+                </select>
+
+                <h3>Payment Options</h3>
+                <div class="payment-options">
+                    <div class="payment-option selected" data-method="razorpay">
+                        <input type="radio" name="paymentMethod" value="razorpay" id="razorpay" checked>
+                        <label for="razorpay">Razorpay (Card/UPI/NetBanking)</label>
+                    </div>
+                    <div class="payment-option" data-method="upi">
+                        <input type="radio" name="paymentMethod" value="upi" id="upi">
+                        <label for="upi">Direct UPI (GPay/PhonePe)</label>
+                    </div>
+                    <div class="payment-option" data-method="bank">
+                        <input type="radio" name="paymentMethod" value="bank" id="bank">
+                        <label for="bank">Bank Transfer</label>
+                    </div>
+                </div>
+
+                <button type="submit" id="submitBtn">Proceed to Payment – ₹4,500</button>
+            </form>
+
+            <div id="paymentSection">
+                <h3>Selected Payment: <span id="selectedMethod"></span></h3>
+                <div id="razorpaySection" style="display: none;">
+                    <p>Secure payment via Razorpay. Amount: ₹4,500</p>
+                    <button id="payNowBtn">Pay Now with Razorpay</button>
+                </div>
+                <div id="upiSection" style="display: none;">
+                    <p>Send ₹4500 to UPI ID: <strong>mysticalcandles@paytm</strong></p>
+                    <p>Reference: [Your Name] - [Batch Date]</p>
+                    <button onclick="window.open('https://wa.me/918200103592?text=I%20paid%20₹4500%20via%20UPI%20for%20candle%20course.%20Name:%20' + document.getElementById('name').value + '%20Batch:%20' + document.getElementById('batch').value)">Confirm Payment on WhatsApp</button>
+                </div>
+                <div id="bankSection" style="display: none;">
+                    <p>Bank Details:</p>
+                    <ul>
+                        <li>Account: Mystical Crafts Pvt Ltd</li>
+                        <li>Bank: HDFC Bank</li>
+                        <li>IFSC: HDFC0001234</li>
+                        <li>Account No: 123456789012</li>
+                    </ul>
+                    <p>Reference: [Your Name] - [Batch Date]</p>
+                    <button onclick="window.open('https://wa.me/918200103592?text=I%20paid%20₹4500%20via%20Bank%20Transfer.%20Name:%20' + document.getElementById('name').value + '%20Batch:%20' + document.getElementById('batch').value)">Confirm Payment on WhatsApp</button>
+                </div>
+            </div>
+
+            <p style="text-align:center; margin-top:15px; font-size:0.9em;">
+                Secure payments. Materials shipped after verification.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p><strong>Phone/WhatsApp:</strong> <a href="tel:+918200103592">8200103592</a></p>
+            <p><strong>Email:</strong> <a href="mailto:mysticalq502@gmail.com">mysticalq502@gmail.com</a></p>
+            <p><strong>Support:</strong> Mon–Sat, 10 AM – 6 PM IST</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Mystical Candle Making | <a href="mailto:mysticalq502@gmail.com">mysticalq502@gmail.com</a> | Call: <a href="tel:+918200103592">8200103592</a></p>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918200103592?text=Hi!%20I%20want%20to%20enroll%20in%20the%20candle%20making%20course!" class="whatsapp-btn" target="_blank">WhatsApp</a>
+
+    <script>
+        const form = document.getElementById('enrollForm');
+        const paymentSection = document.getElementById('paymentSection');
+        const selectedMethodSpan = document.getElementById('selectedMethod');
+        const payNowBtn = document.getElementById('payNowBtn');
+
+        // Payment method selection
+        document.querySelectorAll('.payment-option input').forEach(radio => {
+            radio.addEventListener('change', function() {
+                document.querySelectorAll('.payment-option').forEach(opt => opt.classList.remove('selected'));
+                this.closest('.payment-option').classList.add('selected');
+            });
+        });
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            if (!form.checkValidity()) {
+                alert('Please fill all required fields.');
+                return;
+            }
+
+            const method = document.querySelector('input[name="paymentMethod"]:checked').value;
+            selectedMethodSpan.textContent = method.toUpperCase();
+            paymentSection.style.display = 'block';
+            document.getElementById(method + 'Section').style.display = 'block';
+            paymentSection.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Razorpay Payment
+        payNowBtn.addEventListener('click', function() {
+            const options = {
+                key: 'rzp_test_YOUR_KEY_ID', // Replace with your Razorpay Test Key
+                amount: 450000,
+                currency: 'INR',
+                name: 'Mystical Candle Making',
+                description: '4-Day Online Course + Kit',
+                prefill: {
+                    name: document.getElementById('name').value,
+                    email: document.getElementById('email').value,
+                    contact: document.getElementById('phone').value
+                },
+                theme: { color: '#ff6b35' },
+                handler: function(response) {
+                    alert('Payment Successful! ID: ' + response.razorpay_payment_id);
+                    window.open(`https://wa.me/918200103592?text=Payment%20Successful!%20ID:%20${response.razorpay_payment_id}%20Name:%20${document.getElementById('name').value}`);
+                }
+            };
+            const rzp = new Razorpay(options);
+            rzp.open();
+        });
+    </script>
+</body>
+</html>
